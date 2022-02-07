@@ -1,0 +1,13 @@
+@import url(all.min.css);
+:root {
+    --color-bg: #ffffff;
+    --color-text-main: #000000;
+    
+}
+.myHeading img {
+    margin-right: 10px;
+}
+.myHeading h1,.myHeading img {
+    display: inline-block;
+    vertical-align: middle;
+}
