@@ -4,6 +4,7 @@
     <title>Cool Robot 1.0</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-1" />
+    <link rel="stylesheet" href="Assests/all.min.css" />
     <link rel="stylesheet" href="Assests/main.css" />
     <!-- This inclued both ansome font -->
     <link rel="icon" href="Front_End_Class\Task2_Lab_1\AAB_Icon\favicon.ico" />
@@ -15,28 +16,60 @@
         src="/Front_End_Class/Task2_Lab_1/AAB_Icon/apple-touch-icon.png"
       />
       <h1>myHeader</h1>
+      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Main Content">Main Content</a></li>
-        <li><a href="About Us.html">About Us</a></li>
-        <li><a href="Footer">Contact info</a></li>
+      <ul id="primary-nav" class="primary-nav flex">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Main Content">Main Content</a>
+        </li>
+        <li>
+          <a href="3dpage.html">3D Product</a>
+        </li>
+        <li>
+          <a href="About Us.html">About Us</a>
+        </li>
+        <li>
+          <a href="Footer">Contact info</a>
+        </li>
       </ul>
     </nav>
     <section class="Content">
       <article class="Artcials">
         <head>
           <h2>Main content</h2>
-          <section><p>Bla bla company new product...</p></section>
-        </head>
-      </article>
-      <article class="Articles">
-        <head>
-          <h2>About us</h2>
-          <section><p>Bla bla company info, goal..</p></section>
+          <section>
+            <p>3d image, some info, link to the source(video.etc)</p>
+          </section>
         </head>
       </article>
     </section>
+    <footer class="footer">
+      <div class="footer-addressing">
+        <h1 class="footer_logo">Placeholder</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          Random place.exe<br />
+          <a class="footer_btn" href="#">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <h2 class="nac_title">Requirment logo</h2>
+
+          <ul class="nav_ul">
+            <li>
+              <a href="#" class="fa"><span class="label">Linkedin</span></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
