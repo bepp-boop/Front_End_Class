@@ -3,6 +3,7 @@
     --color-bg: #ffffff;
     --color-text-main: #000000;
     --font-family: sans-serif;
+    background-color: rgb(221, 179, 74);
 }
 *, *:before, *:after {
     box-sizing: border-box;
@@ -152,4 +153,34 @@ margin-left: auto;
 }
 .fa-brands{
     font-size: 2.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   3-Column                               */
+/* -------------------------------------------------------------------------- */
+.column{
+    float:left;
+    padding: 10px;
+}
+
+.right{
+    width: 15%;
+    background-color: #f80303;
+    color: #fff;
+    font-weight: 500;
+}
+
+.left{
+    width: 35%;
+    background-color: rgb(182, 77, 182);
+    color: #ddd;
+}
+
+.middle{
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
