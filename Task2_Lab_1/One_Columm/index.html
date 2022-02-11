@@ -4,71 +4,121 @@
     <title>Cool Robot 1.0</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-1" />
-    <link rel="stylesheet" href="Assests/main.css" />
+    <link rel="stylesheet" href="Assests/css/main.css" />
+    <link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css">
     <!-- This inclued both ansome font -->
-    <link rel="icon" href="Front_End_Class\Task2_Lab_1\AAB_Icon\favicon.ico" />
+    <link rel="icon" href="Images/AAB_Icon/favicon.ico" />
   </head>
   <body>
+    <div class="container">
     <div class="myHeading">
-      <img
-        height="60px"
-        src="/Front_End_Class/Task2_Lab_1/AAB_Icon/apple-touch-icon.png"
-      />
-      <h1>myHeader</h1>
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <img height="60px" src="Images/AAB_Icon/apple-touch-icon.png" />
+      <h1>Industrial Robot Supplier and Manufacturer</h1>
     </div>
+
     <nav>
       <ul id="primary-nav" class="primary-nav flex">
         <li class="active">
           <a href="index.html">Home</a>
         </li>
+
         <li>
-          <a href="Main Content">Main Content</a>
+          <div class="dropdown">
+            <button class="dropdown_btn"><a href="3dpage.html">3D Product</a></button>
+            <div class="dropdown-content">
+              <a href="#">Link1</a>
+              <a href="#">Link2</a>
+              <a href="#">Link3</a>
+            </div>
         </li>
+
         <li>
-          <a href="3dpage.html">3D Product</a>
+          <a href="#news"">Main content</a>
         </li>
+
         <li>
-          <a href="About Us.html">About Us</a>
-        </li>
-        <li>
-          <a href="Footer">Contact info</a>
+          <a href="#o1"">About Us</a>
         </li>
       </ul>
+      <img src="Images/AAB_Icon/ABB-logo.webp">
     </nav>
     <section class="Content">
-      <article class="Artcials">
+      <a id="news"><h1>News</h1></a>
+      <article class="Articles">
         <head>
-          <h2>Main content</h2>
+          <h2>ABB E-mobility Capital Markets Day 2022: Enabling a sustainable future</h2>
           <section>
-            <p>3d image, some info, link to the source(video.etc)</p>
+            <p>ABB E-mobility will host its virtual Capital Markets Day today, February 10, 2022, starting at 2pm CET. Frank Mühlon, CEO, and Alex Hall, CFO of ABB’s E-mobility division, as well as other members of the executive team, will give an insight into its product offering, including electric vehicle charging products, digital services and advanced energy and fleet management solutions, as well as its growth strategy.
+
+              “We are a leader in building a zero-emission future, with smart and reliable electric vehicle charging solutions. We are perfectly aligned to the current E-mobility trends and see massive market opportunities driven by the global electrification and digitalization agendas of countries, corporations and individuals,” said Mühlon.
+              
+              According to external estimates1, roughly 130 million new electric vehicles are expected on roads in key markets2 from 2021 to 2030, while some $590 billion in investment in EV charging infrastructure is required from 2021 to 2040 to meet global emission targets.
+              
+              ABB entered the EV-charging market in 2010 and today is a world leader in EV charging solutions having sold more than 680,000 electric vehicle 
+              chargers across more than 85 markets: over 30,000 DC fast chargers and 650,000 AC chargers. It has a portfolio of EV charging hardware for cars through 
+              to public transport and heavy-duty vehicles, software and services with a variety of B2B and B2C networked solutions and fleet management platforms.
+              <a href="https://new.abb.com/news/detail/87680/abb-e-mobility-capital-markets-day-2022-enabling-a-sustainable-future">Read more</a></p>
           </section>
         </head>
       </article>
+      <article class="Articles">
+        <head>
+          <h2>Q4 2021 results</h2>
+          <section>
+            <p><span style="font-size: 25px; line-height: 40px;">CEO summary</span><br/>
+
+              In the fourth quarter, demand increased significantly and orders grew by 18% year-on-year (21% comparable) with underlying strength shown across all business areas, regions and most customer segments. Revenue growth of 5% (8% comparable) was stronger than expected, due primarily to higher project deliveries towards the end of the period and despite supply chain disruptions in parts of our business. We expect supply chain constraints to prevail near-term. Importantly, we did not experience any unusual order cancellations, which adds comfort to the high level of order backlog of $16.6 billion, up 16% year-on-year (21% comparable).
+              
+              Operational EBITA increased by 20% year-on-year, and despite adverse impacts from supply chain imbalances and some cost inflation we achieved a 160bps improvement of the Operational EBITA margin to 13.1%. This improvement includes last year’s adverse margin impact of 80bps due to the charges triggered by the Kusile project in South Africa as well as non-core items.<a href="https://new.abb.com/news/detail/87680/abb-e-mobility-capital-markets-day-2022-enabling-a-sustainable-future">Read more</a></p>
+            </p></section>
+        </head>
+      </article>
+      <article class="Articles">
+        <head>        
+          <a id="o1">
+            <h2>About us</h2>
+            <section>
+              <p>
+                ABB Robotics is a pioneer in robotics, machine automation and digital services, 
+                providing innovative solutions for a diverse range of industries, from automotive 
+                to electronics to logistics. As one of the world is leading robotics and machine automation suppliers,
+                 ABB Robotics employs more than 11,000 people in 53 countries and has shipped more than 500,000 robot solutions.
+                </p>
+            </section>
+          </a></head>
     </section>
     <footer class="footer">
-      <div class="footer-addressing">
-        <h1 class="footer_logo">Placeholder</h1>
+      <div class="footer_addressing">
+        <h1 class="footer_logo" >ABB</h1>
 
         <h2>Contact</h2>
 
         <address>
-          Random place.exe<br />
+          Random place.exe<br/>
           <a class="footer_btn" href="#">Email Us</a>
         </address>
       </div>
 
-      <ul class="footer-nav">
-        <li class="footer-nav-item">
-          <h2 class="nac_title">Requirment logo</h2>
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Follow us</h2>
 
           <ul class="nav_ul">
             <li>
-              <a href="#" class="fa"><span class="label">Linkedin</span></a>
+              <i class="fa-brands fa-java"></i>
+            </li>
+
+            <li>
+              <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-js "></i>
             </li>
           </ul>
         </li>
       </ul>
     </footer>
+    </div>
+
   </body>
 </html>
