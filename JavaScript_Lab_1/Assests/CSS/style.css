@@ -1,0 +1,36 @@
+@import url(all.min.css);
+html{
+
+}
+html,body{
+    background-color:#ffffff;
+    margin:0;
+    padding:0;
+}
+.nav {
+    background-color:red;
+    width:100%;
+    height: 60px;
+    line-height: 68px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.nav a{
+    text-decoration:none;
+    color: white;
+}
+
+.nav .nav_btn{
+    float: left;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.nav p{
+    padding : 0.75em 2.5em;
+    margin: 15px;
+    font-size: 14px;
+    font-weight:180;
+    float: right;
+    border: solid white 1px;
+}
