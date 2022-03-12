@@ -15,88 +15,191 @@
     <title>Quiz</title>
   </head>
   <body>
-    <h3 id="score"></h3>
     <div id="form_div">
-        <form action="" name="Quiz" onsubmit="validate();return false;">
-            <div class="input-group mb-3">
-                <input class="form-control" type="text" name="name" placeholder="Name">
-            </div>
-            <div class="input-group mb-3">
-                <input class="form-control" type="text" name="surname" placeholder="Surname">
-            </div>
-            <div class="input-group mb-3">
-                <input class="form-control" type="text" name="email" placeholder="Email">
-            </div>
-            <div class="question">            </div>
+      <form action="" name="Quiz" onsubmit="validate();return false;">
+        <h3 id="score"></h3>
+        <h2 style="color: white">Quiz</h2>
+        <p style="color: white">
+          To get the score you need to answer all the questions.
+        </p>
 
-                <div class="form-check" class="correct" id="redDiv">
-                    <input class="form-check-input" type="radio" name="favoriteColor" id="red" value="red">
-                    <label class="form-check-label" for="red">Red is my favorite color</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="favoriteColor" id="green" value="green">
-                    <label class="form-check-label" for="green">Green is my favorite color</label>    
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="favoriteColor" id="blue" value="blue">
-                    <label class="form-check-label" for="blue">Blue is my favorite color</label>
-                </div>
+        <div class="input-group mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            value="Goofy"
+            placeholder="Name"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <input
+            class="form-control"
+            type="text"
+            value="Goofy"
+            name="surname"
+            placeholder="Surname"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="email"
+            value="Goofy@gmail.com"
+            placeholder="Email"
+          />
+        </div>
+        <div class="question">Which of this is a coutry?</div>
 
-            <div class="question">            </div>
+        <div class="form-check" class="correct" id="ParisDiv">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="country"
+            id="Paris"
+            value="Paris"
+            checked="true"
+          />
+          <label class="form-check-label" for="Paris">Paris</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="country"
+            id="Rome"
+            value="Rome"
+          />
+          <label class="form-check-label" for="Rome">Rome</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="country"
+            id="Germany"
+            value="Germany"
+          />
+          <label class="form-check-label" for="Germany">Germany</label>
+        </div>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="favoriteSport" id="soccer" value="soccer">
-                    <label class="form-check-label" for="soccer">Soccer is my favorite sport</label>
-                </div>
-                <div class="form-check" id="hockeylDiv">
-                    <input class="form-check-input" type="radio" name="favoriteSport" id="hockey" value="hockey">
-                    <label class="form-check-label" for="hockey">Hockey is my favorite sport</label>    
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="favoriteSport" id="basketball" value="basketball">
-                    <label class="form-check-label" for="basketball">Basketball is my favorite sport</label>
-                </div>
+        <div class="question">Which of this is a fruit?</div>
 
-            <div class="question">            </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="foodOption" id="pizza" value="pizza">
-                    <label class="form-check-label" for="foodOption_1">I like Pizza</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="foodOption" id="burgers" value="burgers">
-                    <label class="form-check-label" for="foodOption_2">I like Burgers</label>
-                </div>
-                <div class="form-check" id="kebabDiv">
-                    <input class="form-check-input" type="checkbox" name="foodOption" id="kebab" value="kebab">
-                    <label class="form-check-label" for="foodOption_3">I like Kebab</label>
-                </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="Fruit"
+            id="Tomato"
+            value="Tomato"
+          />
+          <label class="form-check-label" for="Tomato">Tomato</label>
+        </div>
+        <div class="form-check" id="OrangelDiv">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="Fruit"
+            id="Orange"
+            value="Orange"
+            checked="true"
+          />
+          <label class="form-check-label" for="Orange">Orange</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="Fruit"
+            id="Spinach"
+            value="Spinach"
+          />
+          <label class="form-check-label" for="Spinach">Spinach</label>
+        </div>
 
-            <div class="question">            </div>
-                <div class="form-check" >
-                    <input class="form-check-input" type="checkbox" name="weatherOption" id="sunny" value="sunny">
-                    <label class="form-check-label" for="sunny">Sunny days are the best</label>
-                </div>
-                <div class="form-check"id="rainDiv">
-                    <input class="form-check-input" type="checkbox" name="weatherOption" id="rainy" value="rainy">
-                    <label class="form-check-label" for="rainy">Rainy days are cozy</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="weatherOption" id="cloudy" value="cloudy">
-                    <label class="form-check-label" for="cloudy">Cloudy days are good</label>
-                </div>
+        <div class="question">Best opinion</div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="foodOption"
+            id="pizza"
+            value="pizza"
+          />
+          <label class="form-check-label" for="foodOption_1"
+            >I like Pizza</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="foodOption"
+            id="burgers"
+            value="burgers"
+          />
+          <label class="form-check-label" for="foodOption_2"
+            >I like Burgers</label
+          >
+        </div>
+        <div class="form-check" id="kebabDiv">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="foodOption"
+            id="kebab"
+            value="kebab"
+          />
+          <label class="form-check-label" for="foodOption_3"
+            >I like Kebab</label
+          >
+        </div>
 
-            <div class="question">            </div>
+        <div class="question">Pick sport you do(The more the better)</div>
+        <label for="Running">
+          <input
+            type="checkbox"
+            name="sport"
+            value="Running"
+            id="Running"
+          />Running</label
+        >
 
-            <div class="form-floating" id="textareaDiv">
-                <textarea class="form-control" name="yourQuestion" id="yourQuestion" cols="30" rows="5"></textarea>
-                <label  for="yourQuestion">Explain why you like like them</label>
-            </div>        
-    
-            <input id="submit_input" class="btn btn-primary" type="submit" value="Submit">
-        </form>
+        <label for="Gymm"
+          ><input type="checkbox" name="sport" value="Gym" id="Gym" />
+          Gym</label
+        >
+        <label for="Swimming"
+          ><input
+            type="checkbox"
+            name="sport"
+            value="Swimming"
+            id="Swimming"
+          />Swimming</label
+        >
+
+        <div class="question">TextBox</div>
+
+        <div class="form-floating" id="textareaDiv">
+          <textarea
+            class="form-control"
+            name="yourQuestion"
+            id="yourQuestion"
+            cols="30"
+            rows="1"
+            value="Blala...bla"
+          ></textarea>
+          <label for="yourQuestion">Explain why you like like them</label>
+        </div>
+
+        <input
+          id="submit_input"
+          class="btn btn-primary"
+          type="submit"
+          value="Submit"
+        />
+      </form>
     </div>
-</body>
-<script>
-   
-  </script>  </body>
+  </body>
 </html>

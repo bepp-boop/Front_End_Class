@@ -1,11 +1,12 @@
 body
 {
-    background-color: rgb(195, 241, 223);
+    background-image: url("background.bmp"); 
 }
 #score
 {
     margin-top: 2%;
     text-align: center;
+    color: white
 }
 #form_div
 {
@@ -15,7 +16,7 @@ body
 form
 {
     width:  60%;
-    background-color: rgb(228, 152, 177);
+    background-color: rgb(139, 112, 212);
     border-radius: 25px;
     padding: 5%;
 }

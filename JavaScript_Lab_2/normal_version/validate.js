@@ -1,13 +1,11 @@
 
 function validate() {
-    let red = document.querySelectorAll[0];
     let name = document.forms["Quiz"]["name"].value;
     let surname = document.forms["Quiz"]["surname"].value;
     let email = document.forms["Quiz"]["email"].value;
-    let radioColor = document.forms["Quiz"]["favoriteColor"].value;
-    let radioSport = document.forms["Quiz"]["favoriteSport"].value;
+    let radioColor = document.forms["Quiz"]["country"].value;
+    let radioSport = document.forms["Quiz"]["Fruit"].value;
     let checkboxFood = document.querySelector('input[type=checkbox][name=foodOption]:checked').value;
-    let checkboxWeather = document.querySelector('input[type=checkbox][name=weatherOption]:checked').value;
     var check_email = /\S+@\S+\.\S+/;
     is_true = true;
     message = "";
@@ -31,13 +29,9 @@ function validate() {
         message += "You must choose a sport \n";
         is_true = false;
     }
-    if (checkboxFood == "") {
+    if (checkboxFood = null) {
         alert(checkboxFood);
         message += "You must choose a food \n";
-        is_true = false;
-    }
-    if (checkboxWeather == "") {
-        message += "You must choose a weather \n";
         is_true = false;
     }
 
@@ -50,31 +44,36 @@ function validate() {
 
 }
 
+
+
 function results() {
     var points = 0;
     const score = document.getElementById("score");
-    const sucess = document.getElementById("Success");
-    const radio1 = document.getElementById("redDiv");
-    const radio2 = document.getElementById("hockeylDiv");
+    const radio1 = document.getElementById("ParisDiv");
+    const radio2 = document.getElementById("OrangelDiv");
     const checkbox1 = document.getElementById("kebabDiv");
-    const checkbox2 = document.getElementById("rainDiv");
-    score.innerHTML = "Your final score is " + points;
-    if (document.getElementById("red").checked) {
+    let checkboxes = document.querySelectorAll('input[name="sport"]:checked');
+    let values = [];
+    checkboxes.forEach((checkbox) => {
+        values.push(checkbox.value);
+    });
+
+    if (document.getElementById("Paris").checked) {
         points++;
     }
-    if (document.getElementById("hockey").checked) {
+    if (document.getElementById("Orange").checked) {
         points++;
     }
     if (document.getElementById("kebab").checked) {
         points++;
     }
-    if (document.getElementById("rainy").checked) {
-        points++;
-    }
+    values.forEach(() => { points++; });
+    // if (document.getElementById("rainy").checked) {
+    //     points++;
+    // }
 
     radio1.style.backgroundColor = "rgb(116, 249, 17)";
     radio2.style.backgroundColor = "rgb(116, 249, 17)";
     checkbox1.style.backgroundColor = "rgb(116, 249, 17)";
-    checkbox2.style.backgroundColor = "rgb(116, 249, 17)";
     score.innerHTML = "Your final score is " + points;
 }
