@@ -53,6 +53,8 @@ function results() {
     const radio2 = document.getElementById("OrangelDiv");
     const checkbox1 = document.getElementById("kebabDiv");
     let checkboxes = document.querySelectorAll('input[name="sport"]:checked');
+    let textbox = document.getElementById("yourQuestion").value
+    let textbox_answer = document.getElementById("yourQuestion_answer")
     let values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.value);
@@ -60,20 +62,24 @@ function results() {
 
     if (document.getElementById("Paris").checked) {
         points++;
+        radio1.style.backgroundColor = "rgb(116, 249, 17)";
     }
+
     if (document.getElementById("Orange").checked) {
         points++;
+        radio2.style.backgroundColor = "rgb(116, 249, 17)";
     }
     if (document.getElementById("kebab").checked) {
+        points++;
+        checkbox1.style.backgroundColor = "rgb(116, 249, 17)";
+    }
+    if ((textbox.toLowerCase()) == "burj khalifa") {
         points++;
     }
     values.forEach(() => { points++; });
     // if (document.getElementById("rainy").checked) {
     //     points++;
     // }
-
-    radio1.style.backgroundColor = "rgb(116, 249, 17)";
-    radio2.style.backgroundColor = "rgb(116, 249, 17)";
-    checkbox1.style.backgroundColor = "rgb(116, 249, 17)";
+    textbox_answer.innerText = "The result is burj khalifa"
     score.innerHTML = "Your final score is " + points;
 }
